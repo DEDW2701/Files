@@ -9,6 +9,20 @@ What you&#39;ll find:
 
 ## Industry updates — September 2025
 
+```mermaid
+timeline
+    title September 2025 — Press Releases
+    section NVIDIA
+      Sep 9, 2025 : Rubin CPX unveiled (massive-context inference)
+      Sep 18, 2025 : NVIDIA and Intel collaboration on AI infrastructure and x86 RTX SoCs
+      Sep 18, 2025 : £2B investment in the U.K. AI startup ecosystem
+      Sep 22, 2025 : OpenAI + NVIDIA 10 GW deployment partnership
+      Sep 29, 2025 : Robotics R&D updates (open models, physics, simulation)
+    section Intel
+      Sep 8, 2025 : Leadership appointments to strengthen execution
+      Sep 18, 2025 : Intel and NVIDIA joint development on AI infrastructure and PC products
+```
+
 A quick summary of notable AI and computing announcements. See full details in the linked files.
 
 - NVIDIA
