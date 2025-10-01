@@ -1,0 +1,2070 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='database' inline='true' name='federated.1brknw90rbz6bb1fz6u7910cdwrc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='database' name='textscan.0344r3s0t3w0r11dxnl4h12tb0o6'>
+            <connection class='textscan' directory='C:/Users/Owner/Downloads/database.csv' filename='database.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0344r3s0t3w0r11dxnl4h12tb0o6' name='database.csv' table='[database#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Record ID' ordinal='0' />
+            <column datatype='integer' name='Incident Year' ordinal='1' />
+            <column datatype='integer' name='Incident Month' ordinal='2' />
+            <column datatype='integer' name='Incident Day' ordinal='3' />
+            <column datatype='string' name='Operator ID' ordinal='4' />
+            <column datatype='string' name='Operator' ordinal='5' />
+            <column datatype='string' name='Aircraft' ordinal='6' />
+            <column datatype='string' name='Aircraft Type' ordinal='7' />
+            <column datatype='integer' name='Aircraft Make' ordinal='8' />
+            <column datatype='integer' name='Aircraft Model' ordinal='9' />
+            <column datatype='integer' name='Aircraft Mass' ordinal='10' />
+            <column datatype='integer' name='Engine Make' ordinal='11' />
+            <column datatype='integer' name='Engine Model' ordinal='12' />
+            <column datatype='integer' name='Engines' ordinal='13' />
+            <column datatype='string' name='Engine Type' ordinal='14' />
+            <column datatype='integer' name='Engine1 Position' ordinal='15' />
+            <column datatype='integer' name='Engine2 Position' ordinal='16' />
+            <column datatype='integer' name='Engine3 Position' ordinal='17' />
+            <column datatype='integer' name='Engine4 Position' ordinal='18' />
+            <column datatype='string' name='Airport ID' ordinal='19' />
+            <column datatype='string' name='Airport' ordinal='20' />
+            <column datatype='string' name='State' ordinal='21' />
+            <column datatype='string' name='FAA Region' ordinal='22' />
+            <column datatype='string' name='Warning Issued' ordinal='23' />
+            <column datatype='string' name='Flight Phase' ordinal='24' />
+            <column datatype='string' name='Visibility' ordinal='25' />
+            <column datatype='string' name='Precipitation' ordinal='26' />
+            <column datatype='integer' name='Height' ordinal='27' />
+            <column datatype='integer' name='Speed' ordinal='28' />
+            <column datatype='integer' name='Distance' ordinal='29' />
+            <column datatype='string' name='Species ID' ordinal='30' />
+            <column datatype='string' name='Species Name' ordinal='31' />
+            <column datatype='string' name='Species Quantity' ordinal='32' />
+            <column datatype='string' name='Flight Impact' ordinal='33' />
+            <column datatype='string' name='Fatalities' ordinal='34' />
+            <column datatype='integer' name='Injuries' ordinal='35' />
+            <column datatype='integer' name='Aircraft Damage' ordinal='36' />
+            <column datatype='integer' name='Radome Strike' ordinal='37' />
+            <column datatype='integer' name='Radome Damage' ordinal='38' />
+            <column datatype='integer' name='Windshield Strike' ordinal='39' />
+            <column datatype='integer' name='Windshield Damage' ordinal='40' />
+            <column datatype='integer' name='Nose Strike' ordinal='41' />
+            <column datatype='integer' name='Nose Damage' ordinal='42' />
+            <column datatype='integer' name='Engine1 Strike' ordinal='43' />
+            <column datatype='integer' name='Engine1 Damage' ordinal='44' />
+            <column datatype='integer' name='Engine2 Strike' ordinal='45' />
+            <column datatype='integer' name='Engine2 Damage' ordinal='46' />
+            <column datatype='integer' name='Engine3 Strike' ordinal='47' />
+            <column datatype='integer' name='Engine3 Damage' ordinal='48' />
+            <column datatype='integer' name='Engine4 Strike' ordinal='49' />
+            <column datatype='integer' name='Engine4 Damage' ordinal='50' />
+            <column datatype='integer' name='Engine Ingested' ordinal='51' />
+            <column datatype='integer' name='Propeller Strike' ordinal='52' />
+            <column datatype='integer' name='Propeller Damage' ordinal='53' />
+            <column datatype='integer' name='Wing or Rotor Strike' ordinal='54' />
+            <column datatype='integer' name='Wing or Rotor Damage' ordinal='55' />
+            <column datatype='integer' name='Fuselage Strike' ordinal='56' />
+            <column datatype='integer' name='Fuselage Damage' ordinal='57' />
+            <column datatype='integer' name='Landing Gear Strike' ordinal='58' />
+            <column datatype='integer' name='Landing Gear Damage' ordinal='59' />
+            <column datatype='integer' name='Tail Strike' ordinal='60' />
+            <column datatype='integer' name='Tail Damage' ordinal='61' />
+            <column datatype='integer' name='Lights Strike' ordinal='62' />
+            <column datatype='integer' name='Lights Damage' ordinal='63' />
+            <column datatype='integer' name='Other Strike' ordinal='64' />
+            <column datatype='integer' name='Other Damage' ordinal='65' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Record ID]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Record ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incident Year]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Incident Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incident Month]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Incident Month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incident Day]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Incident Day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operator ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operator ID]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Operator ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operator]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Operator</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft Type]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Make</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft Make]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft Make</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Model</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft Model]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft Model</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Mass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft Mass]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft Mass</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine Make</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine Make]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine Make</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine Model</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine Model]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine Model</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engines]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engines</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engine Type]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine Type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine1 Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine1 Position]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine1 Position</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine2 Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine2 Position]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine2 Position</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine3 Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine3 Position]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine3 Position</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine4 Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine4 Position]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine4 Position</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport ID]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Airport ID</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Airport</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FAA Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FAA Region]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>FAA Region</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warning Issued</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Warning Issued]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Warning Issued</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight Phase</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Flight Phase]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Flight Phase</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visibility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Visibility]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Visibility</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Precipitation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Precipitation]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Precipitation</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Speed]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Speed</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Distance</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Species ID]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Species ID</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Species Name]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Species Name</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Species Quantity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Species Quantity]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Species Quantity</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight Impact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Flight Impact]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Flight Impact</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fatalities]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Fatalities</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Injuries]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Injuries</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Aircraft Damage</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Radome Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Radome Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Radome Strike</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Radome Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Radome Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Radome Damage</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Windshield Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Windshield Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Windshield Strike</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Windshield Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Windshield Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Windshield Damage</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nose Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nose Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Nose Strike</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nose Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nose Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Nose Damage</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine1 Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine1 Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine1 Strike</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine1 Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine1 Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine1 Damage</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine2 Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine2 Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine2 Strike</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine2 Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine2 Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine2 Damage</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine3 Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine3 Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine3 Strike</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine3 Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine3 Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine3 Damage</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine4 Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine4 Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine4 Strike</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine4 Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine4 Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine4 Damage</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine Ingested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Engine Ingested]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Engine Ingested</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Propeller Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Propeller Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Propeller Strike</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Propeller Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Propeller Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Propeller Damage</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wing or Rotor Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wing or Rotor Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Wing or Rotor Strike</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wing or Rotor Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wing or Rotor Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Wing or Rotor Damage</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuselage Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fuselage Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Fuselage Strike</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuselage Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fuselage Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Fuselage Damage</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Landing Gear Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Landing Gear Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Landing Gear Strike</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Landing Gear Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Landing Gear Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Landing Gear Damage</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tail Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tail Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Tail Strike</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tail Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tail Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Tail Damage</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lights Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lights Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Lights Strike</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lights Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lights Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Lights Damage</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Strike]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Other Strike</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Damage]</local-name>
+            <parent-name>[database.csv]</parent-name>
+            <remote-alias>Other Damage</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Incident Day]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Incident Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Incident Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Owner/AppData/Local/Temp/TableauTemp/#TableauTemp_0ojdqp800bocme14xwpwk13acj2e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/01/2025 10:29:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Record ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Record ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Record ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Incident Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Incident Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Month</remote-alias>
+              <ordinal>2</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Incident Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Day</remote-alias>
+              <ordinal>3</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Operator ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Operator ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Operator ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Operator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Operator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Operator</remote-alias>
+              <ordinal>5</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft</remote-alias>
+              <ordinal>6</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>907</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Make</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Aircraft Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Make</remote-alias>
+              <ordinal>8</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Model</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Aircraft Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Model</remote-alias>
+              <ordinal>9</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Mass</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Aircraft Mass]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Mass</remote-alias>
+              <ordinal>10</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine Make</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine Make</remote-alias>
+              <ordinal>11</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine Model</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine Model</remote-alias>
+              <ordinal>12</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engines</remote-alias>
+              <ordinal>13</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engine Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine Type</remote-alias>
+              <ordinal>14</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine1 Position</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine1 Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine1 Position</remote-alias>
+              <ordinal>15</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine2 Position</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine2 Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine2 Position</remote-alias>
+              <ordinal>16</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine3 Position</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine3 Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine3 Position</remote-alias>
+              <ordinal>17</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine4 Position</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine4 Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine4 Position</remote-alias>
+              <ordinal>18</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Airport ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Airport ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Airport ID</remote-alias>
+              <ordinal>19</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Airport</remote-alias>
+              <ordinal>20</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1863</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>21</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FAA Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FAA Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FAA Region</remote-alias>
+              <ordinal>22</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Warning Issued</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Warning Issued]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Warning Issued</remote-alias>
+              <ordinal>23</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flight Phase</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Flight Phase]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flight Phase</remote-alias>
+              <ordinal>24</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visibility</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Visibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visibility</remote-alias>
+              <ordinal>25</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Precipitation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Precipitation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Precipitation</remote-alias>
+              <ordinal>26</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Height</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Height</remote-alias>
+              <ordinal>27</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Speed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Speed</remote-alias>
+              <ordinal>28</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distance</remote-alias>
+              <ordinal>29</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Species ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Species ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Species ID</remote-alias>
+              <ordinal>30</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>936</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Species Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Species Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Species Name</remote-alias>
+              <ordinal>31</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>936</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Species Quantity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Species Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Species Quantity</remote-alias>
+              <ordinal>32</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flight Impact</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Flight Impact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flight Impact</remote-alias>
+              <ordinal>33</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fatalities</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fatalities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fatalities</remote-alias>
+              <ordinal>34</ordinal>
+              <family>database.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Injuries</remote-alias>
+              <ordinal>35</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Aircraft Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Damage</remote-alias>
+              <ordinal>36</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Radome Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Radome Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Radome Strike</remote-alias>
+              <ordinal>37</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Radome Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Radome Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Radome Damage</remote-alias>
+              <ordinal>38</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Windshield Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Windshield Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Windshield Strike</remote-alias>
+              <ordinal>39</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Windshield Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Windshield Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Windshield Damage</remote-alias>
+              <ordinal>40</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nose Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nose Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nose Strike</remote-alias>
+              <ordinal>41</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nose Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nose Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nose Damage</remote-alias>
+              <ordinal>42</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine1 Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine1 Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine1 Strike</remote-alias>
+              <ordinal>43</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine1 Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine1 Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine1 Damage</remote-alias>
+              <ordinal>44</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine2 Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine2 Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine2 Strike</remote-alias>
+              <ordinal>45</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine2 Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine2 Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine2 Damage</remote-alias>
+              <ordinal>46</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine3 Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine3 Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine3 Strike</remote-alias>
+              <ordinal>47</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine3 Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine3 Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine3 Damage</remote-alias>
+              <ordinal>48</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine4 Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine4 Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine4 Strike</remote-alias>
+              <ordinal>49</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine4 Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine4 Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine4 Damage</remote-alias>
+              <ordinal>50</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine Ingested</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Engine Ingested]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine Ingested</remote-alias>
+              <ordinal>51</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Propeller Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Propeller Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Propeller Strike</remote-alias>
+              <ordinal>52</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Propeller Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Propeller Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Propeller Damage</remote-alias>
+              <ordinal>53</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wing or Rotor Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Wing or Rotor Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wing or Rotor Strike</remote-alias>
+              <ordinal>54</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wing or Rotor Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Wing or Rotor Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wing or Rotor Damage</remote-alias>
+              <ordinal>55</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuselage Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fuselage Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuselage Strike</remote-alias>
+              <ordinal>56</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuselage Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fuselage Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuselage Damage</remote-alias>
+              <ordinal>57</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Landing Gear Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Landing Gear Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Landing Gear Strike</remote-alias>
+              <ordinal>58</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Landing Gear Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Landing Gear Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Landing Gear Damage</remote-alias>
+              <ordinal>59</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tail Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tail Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tail Strike</remote-alias>
+              <ordinal>60</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tail Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tail Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tail Damage</remote-alias>
+              <ordinal>61</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lights Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lights Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lights Strike</remote-alias>
+              <ordinal>62</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lights Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lights Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lights Damage</remote-alias>
+              <ordinal>63</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Other Strike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other Strike</remote-alias>
+              <ordinal>64</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other Damage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Other Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other Damage</remote-alias>
+              <ordinal>65</ordinal>
+              <family>database.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[database.csv_D4D76212B5B94F718B53E6D739666796]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='database.csv' id='database.csv_D4D76212B5B94F718B53E6D739666796'>
+            <properties context=''>
+              <relation connection='textscan.0344r3s0t3w0r11dxnl4h12tb0o6' name='database.csv' table='[database#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Record ID' ordinal='0' />
+                  <column datatype='integer' name='Incident Year' ordinal='1' />
+                  <column datatype='integer' name='Incident Month' ordinal='2' />
+                  <column datatype='integer' name='Incident Day' ordinal='3' />
+                  <column datatype='string' name='Operator ID' ordinal='4' />
+                  <column datatype='string' name='Operator' ordinal='5' />
+                  <column datatype='string' name='Aircraft' ordinal='6' />
+                  <column datatype='string' name='Aircraft Type' ordinal='7' />
+                  <column datatype='integer' name='Aircraft Make' ordinal='8' />
+                  <column datatype='integer' name='Aircraft Model' ordinal='9' />
+                  <column datatype='integer' name='Aircraft Mass' ordinal='10' />
+                  <column datatype='integer' name='Engine Make' ordinal='11' />
+                  <column datatype='integer' name='Engine Model' ordinal='12' />
+                  <column datatype='integer' name='Engines' ordinal='13' />
+                  <column datatype='string' name='Engine Type' ordinal='14' />
+                  <column datatype='integer' name='Engine1 Position' ordinal='15' />
+                  <column datatype='integer' name='Engine2 Position' ordinal='16' />
+                  <column datatype='integer' name='Engine3 Position' ordinal='17' />
+                  <column datatype='integer' name='Engine4 Position' ordinal='18' />
+                  <column datatype='string' name='Airport ID' ordinal='19' />
+                  <column datatype='string' name='Airport' ordinal='20' />
+                  <column datatype='string' name='State' ordinal='21' />
+                  <column datatype='string' name='FAA Region' ordinal='22' />
+                  <column datatype='string' name='Warning Issued' ordinal='23' />
+                  <column datatype='string' name='Flight Phase' ordinal='24' />
+                  <column datatype='string' name='Visibility' ordinal='25' />
+                  <column datatype='string' name='Precipitation' ordinal='26' />
+                  <column datatype='integer' name='Height' ordinal='27' />
+                  <column datatype='integer' name='Speed' ordinal='28' />
+                  <column datatype='integer' name='Distance' ordinal='29' />
+                  <column datatype='string' name='Species ID' ordinal='30' />
+                  <column datatype='string' name='Species Name' ordinal='31' />
+                  <column datatype='string' name='Species Quantity' ordinal='32' />
+                  <column datatype='string' name='Flight Impact' ordinal='33' />
+                  <column datatype='string' name='Fatalities' ordinal='34' />
+                  <column datatype='integer' name='Injuries' ordinal='35' />
+                  <column datatype='integer' name='Aircraft Damage' ordinal='36' />
+                  <column datatype='integer' name='Radome Strike' ordinal='37' />
+                  <column datatype='integer' name='Radome Damage' ordinal='38' />
+                  <column datatype='integer' name='Windshield Strike' ordinal='39' />
+                  <column datatype='integer' name='Windshield Damage' ordinal='40' />
+                  <column datatype='integer' name='Nose Strike' ordinal='41' />
+                  <column datatype='integer' name='Nose Damage' ordinal='42' />
+                  <column datatype='integer' name='Engine1 Strike' ordinal='43' />
+                  <column datatype='integer' name='Engine1 Damage' ordinal='44' />
+                  <column datatype='integer' name='Engine2 Strike' ordinal='45' />
+                  <column datatype='integer' name='Engine2 Damage' ordinal='46' />
+                  <column datatype='integer' name='Engine3 Strike' ordinal='47' />
+                  <column datatype='integer' name='Engine3 Damage' ordinal='48' />
+                  <column datatype='integer' name='Engine4 Strike' ordinal='49' />
+                  <column datatype='integer' name='Engine4 Damage' ordinal='50' />
+                  <column datatype='integer' name='Engine Ingested' ordinal='51' />
+                  <column datatype='integer' name='Propeller Strike' ordinal='52' />
+                  <column datatype='integer' name='Propeller Damage' ordinal='53' />
+                  <column datatype='integer' name='Wing or Rotor Strike' ordinal='54' />
+                  <column datatype='integer' name='Wing or Rotor Damage' ordinal='55' />
+                  <column datatype='integer' name='Fuselage Strike' ordinal='56' />
+                  <column datatype='integer' name='Fuselage Damage' ordinal='57' />
+                  <column datatype='integer' name='Landing Gear Strike' ordinal='58' />
+                  <column datatype='integer' name='Landing Gear Damage' ordinal='59' />
+                  <column datatype='integer' name='Tail Strike' ordinal='60' />
+                  <column datatype='integer' name='Tail Damage' ordinal='61' />
+                  <column datatype='integer' name='Lights Strike' ordinal='62' />
+                  <column datatype='integer' name='Lights Damage' ordinal='63' />
+                  <column datatype='integer' name='Other Strike' ordinal='64' />
+                  <column datatype='integer' name='Other Damage' ordinal='65' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2C95F90E-9456-44F2-9EB8-6046D811230A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E77DDD63-1649-4693-96FC-E1D8C1822842}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
