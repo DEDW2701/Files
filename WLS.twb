@@ -2037,14 +2037,14 @@
           <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
-            <column-instance column='[State]' name='[State]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
             <column-instance column='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' derivation='Count' name='[count:database.csv:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[State]'>
-            <groupfilter function='level-members' level='[State]' />
+          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]'>
+            <groupfilter function='level-members' level='[min:State:nk]' />
           </filter>
           <slices>
-            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[State]</column>
+            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -2095,7 +2095,7 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[State]' />
+              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]' />
               <color column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[count:database.csv:qk]' />
               <geometry column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Geometry (generated)]' />
             </encodings>
@@ -2115,7 +2115,6 @@
           <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
-            <column-instance column='[State]' name='[State]' pivot='key' type='nominal' />
             <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
             <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -2130,7 +2129,7 @@
             <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[State]</rows>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</rows>
         <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[sum:Propeller Strike:qk]</cols>
       </table>
       <simple-id uuid='{B2C3D4E5-6789-0ABC-DEF1-234567890ABC}' />
