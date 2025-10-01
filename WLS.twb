@@ -967,6 +967,9 @@
       <column datatype='integer' name='[Incident Year]' role='dimension' type='quantitative' />
       <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <calculation class='tableau' formula='IF [State] = "AL" OR [State] = "AK" OR [State] = "AZ" OR [State] = "AR" OR [State] = "CA" OR [State] = "CO" OR [State] = "CT" OR [State] = "DE" OR [State] = "FL" OR [State] = "GA" OR [State] = "HI" OR [State] = "ID" OR [State] = "IL" OR [State] = "IN" OR [State] = "IA" OR [State] = "KS" OR [State] = "KY" OR [State] = "LA" OR [State] = "ME" OR [State] = "MD" OR [State] = "MA" OR [State] = "MI" OR [State] = "MN" OR [State] = "MS" OR [State] = "MO" OR [State] = "MT" OR [State] = "NE" OR [State] = "NV" OR [State] = "NH" OR [State] = "NJ" OR [State] = "NM" OR [State] = "NY" OR [State] = "NC" OR [State] = "ND" OR [State] = "OH" OR [State] = "OK" OR [State] = "OR" OR [State] = "PA" OR [State] = "RI" OR [State] = "SC" OR [State] = "SD" OR [State] = "TN" OR [State] = "TX" OR [State] = "UT" OR [State] = "VT" OR [State] = "VA" OR [State] = "WA" OR [State] = "WV" OR [State] = "WI" OR [State] = "WY" THEN [State] END' />
+      </column>
       <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
         <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Owner/AppData/Local/Temp/TableauTemp/#TableauTemp_0ojdqp800bocme14xwpwk13acj2e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/01/2025 10:29:32 PM' username='tableau_internal_user'>
@@ -2024,6 +2027,117 @@
         <cols />
       </table>
       <simple-id uuid='{2C95F90E-9456-44F2-9EB8-6046D811230A}' />
+    </worksheet>
+    <worksheet name='Wildlife Strikes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='database' name='federated.1brknw90rbz6bb1fz6u7910cdwrc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State (US Only)]' derivation='Min' name='[min:State (US Only):nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' derivation='Count' name='[count:database.csv:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]'>
+            <groupfilter function='level-members' level='[min:State (US Only):nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Longitude (generated)]' field-type='quantitative' max='-6092240.1190706939' min='-15083972.843891189' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Latitude (generated)]' field-type='quantitative' max='7041792.0338247493' min='1626432.2128406763' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]' />
+              <color column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[count:database.csv:qk]' />
+              <geometry column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Latitude (generated)]</rows>
+        <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-5678-90AB-CDEF-1234567890AB}' />
+    </worksheet>
+    <worksheet name='prop strikes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='database' name='federated.1brknw90rbz6bb1fz6u7910cdwrc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
+            <column-instance column='[State (US Only)]' derivation='Min' name='[min:State (US Only):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]</rows>
+        <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[sum:Propeller Strike:qk]</cols>
+      </table>
+      <simple-id uuid='{B2C3D4E5-6789-0ABC-DEF1-234567890ABC}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
