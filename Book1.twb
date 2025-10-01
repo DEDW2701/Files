@@ -2023,10 +2023,10 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.0pyt8nb1ns18jv17semk71noin8q'>
-            <column datatype='integer' name='[Aircraft Damage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Aircraft Damage]' derivation='Sum' name='[sum:Aircraft Damage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Record ID]' derivation='Count' name='[count:Record ID:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0pyt8nb1ns18jv17semk71noin8q].[min:State:nk]'>
             <groupfilter function='level-members' level='[min:State:nk]' />
@@ -2084,7 +2084,7 @@
             <mark class='Automatic' />
             <encodings>
               <lod column='[federated.0pyt8nb1ns18jv17semk71noin8q].[min:State:nk]' />
-              <color column='[federated.0pyt8nb1ns18jv17semk71noin8q].[sum:Aircraft Damage:qk]' />
+              <color column='[federated.0pyt8nb1ns18jv17semk71noin8q].[count:Record ID:qk]' />
               <geometry column='[federated.0pyt8nb1ns18jv17semk71noin8q].[Geometry (generated)]' />
             </encodings>
           </pane>
@@ -2139,7 +2139,7 @@
         <edge name='right'>
           <strip size='160'>
             <card param='[federated.0pyt8nb1ns18jv17semk71noin8q].[min:State:nk]' show-morefewerbutton='false' type='filter' />
-            <card pane-specification-id='0' param='[federated.0pyt8nb1ns18jv17semk71noin8q].[sum:Aircraft Damage:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0pyt8nb1ns18jv17semk71noin8q].[count:Record ID:qk]' type='color' />
           </strip>
         </edge>
       </cards>
