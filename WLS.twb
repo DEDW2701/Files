@@ -2115,6 +2115,7 @@
           <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
+            <column-instance column='[State]' name='[State]' pivot='key' type='nominal' />
             <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
             <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -2129,7 +2130,7 @@
             <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</rows>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[State]</rows>
         <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[sum:Propeller Strike:qk]</cols>
       </table>
       <simple-id uuid='{B2C3D4E5-6789-0ABC-DEF1-234567890ABC}' />
