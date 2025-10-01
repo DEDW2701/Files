@@ -2175,6 +2175,34 @@
       </table>
       <simple-id uuid='{5CB0D1C7-ECFA-49BA-AEB1-9F5AEF9C977E}' />
     </worksheet>
+    <worksheet name='Data'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='database' name='federated.0pyt8nb1ns18jv17semk71noin8q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pyt8nb1ns18jv17semk71noin8q'>
+            <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0pyt8nb1ns18jv17semk71noin8q].[sum:Propeller Strike:qk]</rows>
+        <cols>[federated.0pyt8nb1ns18jv17semk71noin8q].[min:State:nk]</cols>
+      </table>
+      <simple-id uuid='{D1A1B2C3-5F6E-4C9D-9E4F-12A34B56C789}' />
+    </worksheet>
   </worksheets>
   <windows source-height='30'>
     <window class='worksheet' maximized='true' name='Wildlife Strikes by State'>
@@ -2241,6 +2269,34 @@
         </edge>
       </cards>
       <simple-id uuid='{601E34FB-29C9-42CC-9ABF-839457F9189E}' />
+    </window>
+    <window class='worksheet' name='Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0pyt8nb1ns18jv17semk71noin8q].[min:State:nk]' show-morefewerbutton='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4B5C6D7-89AB-4CDE-8F01-23456789ABCD}' />
     </window>
   </windows>
   <thumbnails>
