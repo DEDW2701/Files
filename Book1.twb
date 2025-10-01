@@ -2013,7 +2013,7 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='Wildlife Strikes by State'>
       <table>
         <view>
           <datasources>
@@ -2116,7 +2116,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Wildlife Strikes by State'>
       <cards>
         <edge name='left'>
           <strip size='160'>
