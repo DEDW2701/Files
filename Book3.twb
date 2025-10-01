@@ -2025,6 +2025,115 @@
       </table>
       <simple-id uuid='{2C95F90E-9456-44F2-9EB8-6046D811230A}' />
     </worksheet>
+    <worksheet name='Wildlife Strikes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='database' name='federated.1brknw90rbz6bb1fz6u7910cdwrc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' derivation='Count' name='[count:database.csv:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]'>
+            <groupfilter function='level-members' level='[min:State:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Longitude (generated)]' field-type='quantitative' max='-6092240.1190706939' min='-15083972.843891189' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Latitude (generated)]' field-type='quantitative' max='7041792.0338247493' min='1626432.2128406763' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]' />
+              <color column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[count:database.csv:qk]' />
+              <geometry column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Latitude (generated)]</rows>
+        <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-5678-90AB-CDEF-1234567890AB}' />
+    </worksheet>
+    <worksheet name='prop strikes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='database' name='federated.1brknw90rbz6bb1fz6u7910cdwrc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</rows>
+        <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[sum:Propeller Strike:qk]</cols>
+      </table>
+      <simple-id uuid='{B2C3D4E5-6789-0ABC-DEF1-234567890ABC}' />
+    </worksheet>
   </worksheets>
   <windows source-height='30'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
