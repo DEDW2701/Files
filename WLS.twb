@@ -967,6 +967,9 @@
       <column datatype='integer' name='[Incident Year]' role='dimension' type='quantitative' />
       <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <calculation class='tableau' formula='IF [State] = "AL" OR [State] = "AK" OR [State] = "AZ" OR [State] = "AR" OR [State] = "CA" OR [State] = "CO" OR [State] = "CT" OR [State] = "DE" OR [State] = "FL" OR [State] = "GA" OR [State] = "HI" OR [State] = "ID" OR [State] = "IL" OR [State] = "IN" OR [State] = "IA" OR [State] = "KS" OR [State] = "KY" OR [State] = "LA" OR [State] = "ME" OR [State] = "MD" OR [State] = "MA" OR [State] = "MI" OR [State] = "MN" OR [State] = "MS" OR [State] = "MO" OR [State] = "MT" OR [State] = "NE" OR [State] = "NV" OR [State] = "NH" OR [State] = "NJ" OR [State] = "NM" OR [State] = "NY" OR [State] = "NC" OR [State] = "ND" OR [State] = "OH" OR [State] = "OK" OR [State] = "OR" OR [State] = "PA" OR [State] = "RI" OR [State] = "SC" OR [State] = "SD" OR [State] = "TN" OR [State] = "TX" OR [State] = "UT" OR [State] = "VT" OR [State] = "VA" OR [State] = "WA" OR [State] = "WV" OR [State] = "WI" OR [State] = "WY" THEN [State] END' />
+      </column>
       <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
         <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Owner/AppData/Local/Temp/TableauTemp/#TableauTemp_0ojdqp800bocme14xwpwk13acj2e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/01/2025 10:29:32 PM' username='tableau_internal_user'>
@@ -2037,14 +2040,15 @@
           <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column caption='database.csv' datatype='table' name='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' role='measure' type='quantitative' />
-            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State (US Only)]' derivation='Min' name='[min:State (US Only):nk]' pivot='key' type='nominal' />
             <column-instance column='[__tableau_internal_object_id__].[database.csv_D4D76212B5B94F718B53E6D739666796]' derivation='Count' name='[count:database.csv:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]'>
-            <groupfilter function='level-members' level='[min:State:nk]' />
+          <filter class='categorical' column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]'>
+            <groupfilter function='level-members' level='[min:State (US Only):nk]' />
           </filter>
           <slices>
-            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</column>
+            <column>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -2095,7 +2099,7 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]' />
+              <lod column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]' />
               <color column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[count:database.csv:qk]' />
               <geometry column='[federated.1brknw90rbz6bb1fz6u7910cdwrc].[Geometry (generated)]' />
             </encodings>
@@ -2114,8 +2118,9 @@
           </datasources>
           <datasource-dependencies datasource='federated.1brknw90rbz6bb1fz6u7910cdwrc'>
             <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[State (US Only)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column datatype='integer' name='[Propeller Strike]' role='measure' type='quantitative' />
-            <column-instance column='[State]' derivation='Min' name='[min:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State (US Only)]' derivation='Min' name='[min:State (US Only):nk]' pivot='key' type='nominal' />
             <column-instance column='[Propeller Strike]' derivation='Sum' name='[sum:Propeller Strike:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
@@ -2129,7 +2134,7 @@
             <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State:nk]</rows>
+        <rows>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[min:State (US Only):nk]</rows>
         <cols>[federated.1brknw90rbz6bb1fz6u7910cdwrc].[sum:Propeller Strike:qk]</cols>
       </table>
       <simple-id uuid='{B2C3D4E5-6789-0ABC-DEF1-234567890ABC}' />
